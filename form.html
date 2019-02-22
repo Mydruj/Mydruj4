@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form Sample</title>
+  </head>
+  <body>
+    <nav><a href="index.html">Головна</a></nav>
+    <br />
+    <h3>Трохи попитаємо:</h3>
+    <h4>Які перші враження від занять?</h4>
+    <form
+      name="ask-one"
+      action="https://formspree.io/Mydruj@meta.ua"
+      method="post"
+    >
+      <label
+        ><input
+          type="checkbox"
+          name="emotion"
+          value="Крутезно викладають"
+          checked="checked"
+        />Крутезно викладають</label
+      >
+      <br />
+      <label
+        ><input type="checkbox" name="emotion" value="Приємна група" />Приємна
+        група </label
+      ><br />
+      <label
+        ><input
+          type="checkbox"
+          name="emotion"
+          value="Так як усюди - ні ліпше, ні гірше"
+        />
+        Так як усюди - ні ліпше, ні гірше</label
+      ><br />
+      <label
+        ><input type="checkbox" name="emotion" value="Усе нездало" /> Усе
+        нездало!!!😡</label
+      ><br />
+      <input type="submit" value="OK" /> <input type="reset" value="Reset" />
+    </form>
+    <br />
+    <h4>В'ячеслав є класним викладачем?</h4>
+    <form
+      name="yes-no"
+      action="https://formspree.io/Mydruj@meta.ua"
+      method="post"
+    >
+      <label
+        ><input type="radio" name="answer" value="yes" checked="checked" />
+        Так!</label
+      ><br />
+      <label><input type="radio" name="answer" value="no" /> Ні</label><br />
+      <h3>Щось додасьте від себе?</h3>
+      <textarea name="comment" id="comment" cols="48" rows="8"> </textarea>
+    </form>
+    <br />
+    <form method="POST" action="https://formspree.io/Mydruj@meta.ua">
+      <fieldset>
+        <legend>Коротко про себе:</legend>
+        <label
+          ><input
+            type="radio"
+            name="gender"
+            value="male"
+            checked="checked"
+          /><small>Чоловік/Хлопець</small></label
+        ><br />
+        <label
+          ><input type="radio" name="gender" value="female" />
+          <small>Жінка/дівчина</small></label
+        ><br />
+        <label
+          ><input type="text" size="20" value="dd.mm.yyyy" />
+          <small>Дата народження</small></label
+        ><br />
+        <label
+          ><input type="text" size="20" />
+          <small>Місце проживання</small></label
+        ><br />
+        <input type="submit" value="Відправити" />
+      </fieldset>
+    </form>
+  </body>
+</html>
